@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Variable.ttf");
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("./assets/fonts/CormorantGaramond-Regular.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Cormorant";
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  grid-template-columns: minmax(500px, 1fr) 750px;
+}
+
+.cv {
+  background-color: aqua;
+}
