@@ -16,18 +16,31 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Cormorant";
 }
 
 #root {
   width: 100vw;
   height: 100vh;
+  font-family: "Inter";
+}
+
+h1 {
+  font-family: "Cormorant";
+}
+
+input {
+  outline: none;
 }
 
 .main-container {
-  grid-template-columns: minmax(500px, 1fr) 750px;
+  grid-template-columns: minmax(535px, 1fr) 750px;
 }
 
 .cv {
-  background-color: aqua;
+  background-color: rgb(240, 240, 240);
+  font-family: "Cormorant";
+}
+
+.edu-container div:first-child {
+  border-color: black;
 }
