@@ -36,6 +36,18 @@ input {
   grid-template-columns: minmax(535px, 1fr) 750px;
 }
 
+.hide {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
 .cv {
   background-color: rgb(240, 240, 240);
   font-family: "Cormorant";

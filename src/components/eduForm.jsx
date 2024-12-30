@@ -4,7 +4,7 @@ import Input from "./input";
 function Edu({ data, handleCollege, handleDegree, handleCity, handlePeriod }) {
   return (
     <>
-      <div className="basic-container flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-3 justify-center">
         <Input
           field={`College / University`}
           type={`text`}
