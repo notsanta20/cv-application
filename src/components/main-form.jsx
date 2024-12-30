@@ -2,10 +2,16 @@ import { useState } from "react";
 import Basic from "./basicForm";
 import Edu from "./eduForm";
 
-function MainForm(data) {
+function MainForm({
+  basicData,
+  handleName,
+  handlePhone,
+  handleMail,
+  handleGithub,
+  eduData,
+}) {
   function getData() {
-    console.log(data.basic);
-    console.log(data.edu);
+    console.log(basicData);
   }
 
   return (
@@ -15,8 +21,14 @@ function MainForm(data) {
           CV Application Creator
         </h1>
         <div className="flex flex-col items-center gap-10">
-          <Basic data={data} />
-          <Edu data={data.eduData} />
+          <Basic
+            data={basicData}
+            handleName={handleName}
+            handlePhone={handlePhone}
+            handleMail={handleMail}
+            handleGithub={handleGithub}
+          />
+          <Edu data={eduData} />
           <button
             className="rounded p-2 bg-blue-600 text-white"
             onClick={getData}

@@ -1,71 +1,32 @@
 import { useState } from "react";
 import Input from "./input";
 
-function Edu({ data }) {
-  const [eduData, setEduData] = useState({
-    college: ``,
-    degree: ``,
-    city: ``,
-    period: ``,
-  });
-
-  function handleCollege(e) {
-    setEduData({
-      ...eduData,
-      college: e.target.value,
-    });
-    data.college = e.target.value;
-  }
-
-  function handleDegree(e) {
-    setEduData({
-      ...eduData,
-      degree: e.target.value,
-    });
-    data.degree = e.target.value;
-  }
-
-  function handleCity(e) {
-    setEduData({
-      ...eduData,
-      city: e.target.value,
-    });
-    data.city = e.target.value;
-  }
-
-  function handlePeriod(e) {
-    setEduData({
-      ...eduData,
-      period: e.target.value,
-    });
-    data.period = e.target.value;
-  }
-
+function Edu({ data, handleCollege, handleDegree, handleCity, handlePeriod }) {
   return (
     <>
       <div className="basic-container flex flex-wrap gap-3">
         <Input
           field={`College / University`}
           type={`text`}
-          value={eduData.college}
+          value={data.college}
           func={handleCollege}
         />
         <Input
           field={`Degree`}
           type={`text`}
-          value={eduData.degree}
+          value={data.degree}
           func={handleDegree}
         />
         <Input
           field={`City`}
           type={`text`}
-          value={eduData.city}
+          value={data.city}
           func={handleCity}
         />
         <Input
           field={`Period`}
           type={`text`}
-          value={eduData.period}
+          value={data.period}
           func={handlePeriod}
         />
       </div>

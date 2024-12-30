@@ -1,47 +1,7 @@
 import { useState } from "react";
 import Input from "./input";
 
-function Basic({ data }) {
-  const [basicData, setBasicData] = useState({
-    name: ``,
-    phone: ``,
-    mail: ``,
-    github: ``,
-  });
-
-  function handleName(e) {
-    setBasicData({
-      ...basicData,
-      name: e.target.value,
-    });
-    console.log(data.data);
-    data.data.basicData.name = e.target.value;
-  }
-
-  function handlePhone(e) {
-    setBasicData({
-      ...basicData,
-      phone: e.target.value,
-    });
-    data.phone = e.target.value;
-  }
-
-  function handleMail(e) {
-    setBasicData({
-      ...basicData,
-      mail: e.target.value,
-    });
-    data.mail = e.target.value;
-  }
-
-  function handleGithub(e) {
-    setBasicData({
-      ...basicData,
-      github: e.target.value,
-    });
-    data.github = e.target.value;
-  }
-
+function Basic({ data, handleName, handlePhone, handleMail, handleGithub }) {
   return (
     <>
       <div className="basic-container  bg-gray-200 rounded-md p-3">
@@ -50,25 +10,25 @@ function Basic({ data }) {
           <Input
             field={`Name`}
             type={`text`}
-            value={basicData.name}
+            value={data.name}
             func={handleName}
           />
           <Input
             field={`Phone`}
             type={`tel`}
-            value={basicData.phone}
+            value={data.phone}
             func={handlePhone}
           />
           <Input
             field={`E-mail`}
             type={`email`}
-            value={basicData.mail}
+            value={data.mail}
             func={handleMail}
           />
           <Input
             field={`Github`}
             type={`text`}
-            value={basicData.github}
+            value={data.github}
             func={handleGithub}
           />
         </div>
