@@ -10,6 +10,36 @@
 @font-face {
   font-family: "Cormorant";
   src: url("./assets/fonts/CormorantGaramond-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("./assets/fonts/CormorantGaramond-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("./assets/fonts/CormorantGaramond-Semibold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("./assets/fonts/CormorantGaramond-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("./assets/fonts/CormorantGaramond-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
 }
 
 * {
@@ -55,4 +85,11 @@ input {
 
 .edu-container div:first-child {
   border-color: black;
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

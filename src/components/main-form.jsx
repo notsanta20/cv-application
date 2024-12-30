@@ -32,17 +32,15 @@ function MainForm({
   handleExpCity2,
   handleDes2,
 }) {
-  function getData() {
-    console.log(basicData);
-  }
-
   const [selected, setSelected] = useState(`null`);
 
   return (
     <>
-      <main className="flex flex-col gap-20">
-        <h1 className="text-5xl font-semibold text-center">
-          CV Application Creator
+      <main className="flex flex-col gap-20 items-center">
+        <h1 className="text-5xl font-bold text-center">
+          <a href="https://github.com/notsanta20/cv-application" target="blank">
+            CV Application Creator
+          </a>
         </h1>
         <div className="flex flex-col items-center gap-10">
           <div className="bg-gray-200 rounded-md p-3 flex flex-col">
@@ -120,7 +118,7 @@ function MainForm({
                     handleDes={handleDes}
                   />
                 </div>
-                <div className="text-lg font-medium text-gray-700">
+                <div className="text-md font-medium text-gray-700">
                   Experience 2
                 </div>
                 <div>
@@ -136,12 +134,6 @@ function MainForm({
               </div>
             </div>
           </div>
-          <button
-            className="rounded p-2 bg-blue-600 text-white"
-            onClick={getData}
-          >
-            Get CV
-          </button>
         </div>
       </main>
     </>

@@ -6,7 +6,7 @@ function AsideCv({ basicData, eduData, eduData2, expData, expData2 }) {
       <aside className="cv flex flex-col gap-7 p-5">
         <div className="bas-container text-center">
           <div className="name text-5xl font-bold pb-3">{basicData.name}</div>
-          <div className="bas text-xl">
+          <div className="bas text-xl font-medium">
             {basicData.phone} | <a href={basicData.mail}>{basicData.mail}</a> |{" "}
             <a href={basicData.github}>{basicData.github}</a>
           </div>
@@ -16,21 +16,21 @@ function AsideCv({ basicData, eduData, eduData2, expData, expData2 }) {
           <div className="flex text-lg">
             <div className="flex-grow">
               <div className="font-bold">{eduData.college}</div>
-              <div className="italic">{eduData.degree}</div>
+              <div className="font-medium italic">{eduData.degree}</div>
             </div>
             <div className="text-right">
               <div className="font-bold">{eduData.city}</div>
-              <div className="italic ">{eduData.period}</div>
+              <div className="font-medium italic ">{eduData.period}</div>
             </div>
           </div>
           <div className="flex text-lg">
             <div className="flex-grow">
               <div className="font-bold">{eduData2.college}</div>
-              <div className="italic">{eduData2.degree}</div>
+              <div className="font-medium italic">{eduData2.degree}</div>
             </div>
             <div className="text-right">
               <div className="font-bold">{eduData2.city}</div>
-              <div className="italic ">{eduData2.period}</div>
+              <div className="font-medium italic ">{eduData2.period}</div>
             </div>
           </div>
         </div>
@@ -39,27 +39,27 @@ function AsideCv({ basicData, eduData, eduData2, expData, expData2 }) {
           <div className="flex text-lg">
             <div className="flex-grow">
               <div className="font-bold">{expData.position}</div>
-              <div className="italic">{expData.company}</div>
+              <div className="font-medium italic">{expData.company}</div>
             </div>
             <div className="text-right">
               <div className="font-bold">{expData.exp}</div>
-              <div className="italic ">{expData.expCity}</div>
+              <div className="font-medium italic">{expData.expCity}</div>
             </div>
           </div>
-          <div className="exp-des text-lg whitespace-pre text-wrap ">
+          <div className="exp-des text-lg whitespace-pre text-wrap font-medium">
             {expData.des}
           </div>
           <div className="flex text-lg">
             <div className="flex-grow">
               <div className="font-bold">{expData2.position}</div>
-              <div className="italic">{expData2.company}</div>
+              <div className="font-medium italic">{expData2.company}</div>
             </div>
             <div className="text-right">
               <div className="font-bold">{expData2.exp}</div>
-              <div className="italic ">{expData2.expCity}</div>
+              <div className="font-medium italic">{expData2.expCity}</div>
             </div>
           </div>
-          <div className="exp-des text-lg whitespace-pre text-wrap ">
+          <div className="exp-des text-lg whitespace-pre text-wrap font-medium">
             {expData2.des}
           </div>
         </div>

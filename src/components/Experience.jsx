@@ -47,6 +47,7 @@ function Expr({
           placeholder="Description"
           className="bg-gray-100 rounded-md p-2"
           onChange={handleDes}
+          rows="5"
         ></textarea>
       </div>
     </>
