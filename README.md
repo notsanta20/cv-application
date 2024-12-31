@@ -1,8 +1,29 @@
-# React + Vite
+<h3 align="center">CV Application</h3>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <p align="center">
+    Simple and minimal CV Application.  
+    <br />
+    <a href="https://cv-application-eta-eight.vercel.app/" target="_blank">Live Demo</a>
+  </p>
+</div>
+<br>
 
-Currently, two official plugins are available:
+<!-- ABOUT THE PROJECT -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Preview
+
+<div align="center">
+ <img src="./src/assets/preview.png">
+</div>
+
+### Built With
+
+[![My Skills](https://skillicons.dev/icons?i=js,react,html,css,tailwind,vite)](https://skillicons.dev)
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+- Inspiration by <a href="https://www.theodinproject.com/lessons/node-path-react-new-cv-application" target="_blank">The Odin Project</a>
+
+- <a href="https://github.com/jakegut/resume" target="_blank">CV template</a>
